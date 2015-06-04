@@ -1,0 +1,30 @@
+Henry Cooney 
+design.org
+
+
+Pyflight working design document
+
+* Currently Working On
+  
+  - [ ] Get airspeed to scale properly
+  - [ ] Get drag to scale properly
+
+
+* Engine
+
+** TODO Get a working unit system 
+  - [ ] Get airspeed to scale properly
+  - [ ] Get drag to scale properly
+    
+
+* Control
+  
+** TODO Implement mouse control
+
+* Flight Model
+
+** TODO "Spaceship" model
+
+   Implement a simplified spaceship-style FM.
+
+   

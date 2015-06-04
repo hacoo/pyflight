@@ -1,0 +1,59 @@
+# Does conversion between units. Unit conversion values are specified in
+# constants.py.
+
+
+from constants import *
+from numpy import *
+from geometry import *
+
+
+def nm2ft(x):
+    """ Convert a value in nautical miles to feet """ 
+    return x*FEET_PER_MILE
+
+def ft2nm(x):
+    """ Convert value in feet to nm """
+    return x/FEET_PER_MILE
+
+def kts2WUps(x):
+    """ convert speed, in knots, to world units per second. """
+    return x / 36
+    
+
+def WUps2kts(x):
+    """ Convert a value in world units per second to knots. """
+    return 36 * x
+
+
+
+def ft2WU(x):
+    """ converts a value in feet to world units """
+    return ft2nm(x)*SCALE
+
+def WU2ft(x):
+    """ Converts a value in world units to feet """
+    return nm2ft(x/SCALE)
+
+def npArray2Vector(x):
+    """ Converts numpy array to a geometry.py vector """
+
+    return vector(x[0, 0], x[1, 0], x[2, 0])
+
+
+def npArray2Point(x):
+    """ Converts numpy array to a geometry.py point """
+
+    return point(x[0, 0], x[1, 0], x[2, 0])
+
+
+def star(x):
+    """ Generates the "star" operation matrix for this vector. See
+    http://www.pixar.com/companyinfo/research/pbm2001/pdf/notesg.pdf
+    -- see page G8 for an explaination of this. Basically, this
+    matrix is used for getting the cross product of a vector with each
+    column of a matrix. """
+    
+    return matrix([[0.0, -x[2, 0], x[1, 0]],
+                  [x[2, 0], 0.0, -x[0, 0]],
+                  [-x[1, 0], x[0, 0], 0.0]])
+
