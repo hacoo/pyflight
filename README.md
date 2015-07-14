@@ -26,21 +26,19 @@ Freeglut: http://freeglut.sourceforge.net/docs/install.php
 This is an intimidating list, but hopefully you can easily install these using apt and / or pip. So, 
 on Ubuntu/Debian Linux flavors, try:
 
-sudo apt-get install python3.3
-sudo apt-get install python3-pip
-sudo apt-get install python-opengl
-sudo apt-get install freeglut3
-sudo apt-get install python3-numpy
+sudo apt-get install python3.3 python3-pip python3-opengl freeglut3 python3-numpy
 
 If you'd rather use Pip, first install Python 3, pip, and Freeglut, then:
 
-pip3 install numpy
-pip3 install pyopengl
+sudo pip3 install numpy
+sudo pip3 install pyopengl
 
-On my system (Linux Mint Debian) all the required packages were easily available through 
+On my system (Linux Mint 17.2) all the required packages were easily available through 
 standard apt repositories. So I recommend trying that first. It can also be helpful to use
 a gui package manager like Synaptic (sudo apt-get install synaptic)
 
+To run Pyflight on Mac OS X, you will need to install Freeglut, which I have not figured out
+how to do (since I don't own a Mac). If you get it working on Mac, let me know!
 
 WHAT'S IN THIS REPOSITORY:
 16i_stonehenge.raw - the terrain map file. This is from originally from the 1998 video
