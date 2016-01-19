@@ -34,8 +34,7 @@ sudo pip3 install numpy
 sudo pip3 install pyopengl
 
 On my system (Linux Mint 17.2) all the required packages were easily available through 
-standard apt repositories. So I recommend trying that first. It can also be helpful to use
-a gui package manager like Synaptic (sudo apt-get install synaptic)
+standard apt repositories. 
 
 To run Pyflight on Mac OS X, you will need to install Freeglut, which I have not figured out
 how to do (since I don't own a Mac). If you get it working on Mac, let me know!
