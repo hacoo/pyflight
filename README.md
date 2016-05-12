@@ -7,7 +7,7 @@ with PyOpenGL, and user input / windowing uses Freeglut.
 Pyflight has been tested on Linux Mint Debian 3.11.8. I'm working to test  / make
 it compatible with other systems, but for now, Linux is the only supported OS.
 
-![alt tag](https://raw.githubusercontent.com/hacoo/pyflight/main/screenshots/pyflight.png)
+![alt tag](https://raw.githubusercontent.com/hacoo/pyflight/master/screenshots/pyflight.png)
 
 To run pyflight:
 
