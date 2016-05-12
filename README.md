@@ -1,7 +1,7 @@
 # pyflight
 pyflight
 
-Pyflight is a simple flight simulator, written in Python. Graphics are implemented
+Pyflight is a simple physics-based flight simulator, written in Python. Graphics are implemented
 with PyOpenGL, and user input / windowing uses Freeglut. 
 
 Pyflight has been tested on Linux Mint Debian 3.11.8. I'm working to test  / make
@@ -9,9 +9,9 @@ it compatible with other systems, but for now, Linux is the only supported OS.
 
 To run pyflight:
 
-- clone the repository
-- cd pyflight/
-- python3.3 pyflight.py
+> git clone https://github.com/hacoo/pyflight.git
+> cd pyflight/
+> python3.3 pyflight.py
 - Use the mouse to control the plane
 - For much more detailed game instructions, see Instructions.odp
 
@@ -23,19 +23,13 @@ OpenGL: https://www.opengl.org/wiki/Getting_Started
 PyOpenGL: http://pyopengl.sourceforge.net/
 Freeglut: http://freeglut.sourceforge.net/docs/install.php
 
-This is an intimidating list, but hopefully you can easily install these using apt and / or pip. So, 
-on Ubuntu/Debian Linux flavors, try:
-
-sudo apt-get install python3.3 python3-pip python3-opengl freeglut3 python3-numpy
-
-If you'd rather use Pip, first install Python 3, pip, and Freeglut, then:
-
-sudo pip3 install numpy
-sudo pip3 install pyopengl
-
-On my system (Linux Mint 17.2) all the required packages were easily available through 
-standard apt repositories. 
-
+To install on Ubuntu Linux:
+> sudo apt-get install freeglut3-dev
+> pip3 install numpy pyopengl
+ 
+This *SHOULD* get everything, but I haven't tested it yet on a clean stock system 
+(so it might miss something).
+ 
 To run Pyflight on Mac OS X, you will need to install Freeglut, which I have not figured out
 how to do (since I don't own a Mac). If you get it working on Mac, let me know!
 
