@@ -35,25 +35,6 @@ This *SHOULD* get everything, but I haven't tested it yet on a clean stock syste
 To run Pyflight on Mac OS X, you will need to install Freeglut, which I have not figured out
 how to do (since I don't own a Mac). If you get it working on Mac, let me know!
 
-WHAT'S IN THIS REPOSITORY:
-16i_stonehenge.raw - the terrain map file. This is from originally from the 1998 video
-game, Starsiege:Tribes.
-CoLCurve2.jpg - A graph of the Coefficient of Lift curve. .fig files are MATLAB files
-Instructions.odp - OpenOffice presentation of game instructions
-
-CODE: 
-airplane.py - Handles the forces acting on the airplane (including user controls)
-constants.py - Constant definitions
-geometry.py - Implements point and vector objects (Written by Jim Fix)
-hud.py - Implements the HUD.
-landscape.py - Loads the landscape from a file and draws it.
-part.py - old mass-spring simulation, not used (rigid body phsics used instead)
-pyflight.py - viewer module, responible for actualy OpenGL calls (adapted from code written by Jim Fix)
-quat.py - Implements quaternions (Written by Jim Fix)
-ridigbody.py - Implements a rigid-body simulation, this computes the actual effect of forces on the airplane.
-units.py - Simple unit conversion functions.
-
-
 THANK YOU TO: 
 Jim Fix - http://people.reed.edu/~jimfix/ - Jim Fix taught Computer Graphics class that I wrote this 
 program for. He wrote geometry.py and quat.py, and much of the OpenGL viewer code
